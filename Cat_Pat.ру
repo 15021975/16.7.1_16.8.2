@@ -1,0 +1,9 @@
+from Pat import Cat
+
+Cat1 = Cat('Кузя','2','кот')
+Cat2 = Cat('Тузик','4','кот')
+Cat3 = Cat('Мася','6','кошка')
+
+Cat1.info_Cat()
+Cat2.info_Cat()
+Cat3.info_Cat()
