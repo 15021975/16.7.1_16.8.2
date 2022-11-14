@@ -22,8 +22,8 @@ for figure in figures:
         print(figure.get_area())
 
 # площадь круга
-circle_1 = Сircle(7)
-circle_2 = Сircle(22)
+circle_1 = Сircle(5)
+circle_2 = Сircle(7)
 
 print(circle_1.get_area_circle())
 print(circle_2.get_area_circle())
