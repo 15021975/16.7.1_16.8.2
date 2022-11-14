@@ -4,28 +4,27 @@
 
 # Затем создайте список, в который будут добавлены все клиенты, и выведете его в консоль.
 
-class Customers:
-    def __init__(self, first_name, second_name, city, balance):
-        self.first_name = first_name
+class Clients:
+    def __init__(self,name,second_name,city,balance):
+        self.name = name
         self.second_name = second_name
         self.city = city
         self.balance = balance
-
     def __str__(self):
-        return f'''"{self.first_name} {self.second_name}. {self.city}. Баланс: {self.balance} руб."'''
-
+        return (f"{self.name} {self.second_name}.{self.city}.Баланс:{self.balance}руб.")
     def get_guest(self):
-        return f'{self.first_name} {self.second_name}. {self.city}'
+        return (f"{self.name} {self.second_name}.{self.city}")
+    
+client_1 = Clients('Иван','Петров','Москва',50)
+client_2 = Clients('Иван','Иванов','Уфа',150)
+client_3 = Clients('Анна','Петерсон','Хельсенки',150)
 
-customer_1 = Customers('Иван', 'Петров', 'Москва', 50)
-customer_2 = Customers('Мария', 'Иванова', 'Питер', 150)
-customer_3 = Customers('Петр', 'Степанов', 'Екатеринбург', 250)
-
-guest_list=[customer_1,customer_2,customer_3]
+guest_list = [client_1,client_2,client_3]
 
 for guest in guest_list:
     print(guest.get_guest())
+
     
-# Иван Петров. Москва
-# Мария Иванова. Питер
-# Петр Степанов. Екатеринбург
+# Иван Петров.Москва
+# Иван Иванов.Уфа
+# Анна Петерсон.Хельсенки
